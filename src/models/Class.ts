@@ -8,7 +8,7 @@ import {
 
 @Entity()
 export class Class {
-  @PrimaryGeneratedColumn("uuid")
+  @PrimaryGeneratedColumn("increment")
   id: string;
 
   @Column()
@@ -18,8 +18,8 @@ export class Class {
   duration: number;
 
   @CreateDateColumn()
-  createdAt: Date;
+  created_At: Date;
 
   @UpdateDateColumn()
-  updatedAt: Date;
+  updated_At: Date;
 }
