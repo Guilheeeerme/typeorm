@@ -22,6 +22,7 @@ classRouter.get("/", async (request: Request, response: Response) => {
     return response.status(200).json(await getRepository(Class).find());
   } catch (error) {
     console.log("err.message ==>", error.message);
+    return response.status(400).send();
   }
 });
 

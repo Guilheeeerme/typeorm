@@ -7,7 +7,7 @@ import {
 } from "typeorm";
 
 @Entity()
-export default class Lesson {
+export default class Student {
   @PrimaryGeneratedColumn("increment")
   id: string;
 
