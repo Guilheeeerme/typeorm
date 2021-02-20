@@ -16,11 +16,11 @@ export class Class {
   @Column()
   name: string;
 
-  @Column()
-  duration: number;
-
   @OneToMany((type) => Lesson, (suject) => Class)
   lessons: Lesson[];
+
+  @Column()
+  duration: number;
 
   @CreateDateColumn()
   created_At: Date;
